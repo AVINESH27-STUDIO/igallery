@@ -1,0 +1,40 @@
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: gold;
+    font-family: 'Cursive', Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.gallery-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.gallery-container img {
+    height: 150px;
+    width: auto;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    color: gold;
+    background-color: #222;
+}
