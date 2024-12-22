@@ -57,6 +57,7 @@ gall.html
         &copy; DESIGNED AND DEVELOPED BY AVINESH.B
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
 
@@ -102,6 +103,29 @@ footer {
     color: gold;
     background-color: #222;
 }
+
+scrpt.js 
+
+document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll('.gallery-container img');
+
+    images.forEach(image => {
+        image.addEventListener('mouseenter', function() {
+            image.style.transform = "scale(1.2)";  // Zoom in the image on hover
+        });
+
+        image.addEventListener('mouseleave', function() {
+            image.style.transform = "scale(1)";  // Return to normal size when mouse leaves
+        });
+    });
+
+    images.forEach(image => {
+        image.addEventListener('click', function() {
+            alert('You clicked on ' + image.alt);
+        });
+    });
+});
+
 
 ```
 ## OUTPUT:
